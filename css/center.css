@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+        /*设置整体*/
+        * {
+            /*		width:1350px;*/
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+        .content{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .left {
+            float: left;
+/*            width: 20%;*/
+			width: 10%;
+            height: 725px;
+            background-color:#458fce;
+/*			background-image: linear-gradient(#458fce,#F1E5E5);*/
+            /* position: absolute;
+            top: 75px;
+            left: 0px;
+            height: 100%;
+            width: 90px;
+            background-image: url(images/2.jpg); */
+        }
+
+/*
+        .left .school {
+            
+		font-family:"brush-script-std";
+		font-style:italic;
+		font-size: 13px;
+
+            background:#458fce;
+            background-repeat: no-repeat;
+        }
+*/
+
+        .left ul li {
+            /* float: left ; */
+            color: #fff;
+            /* display: inline-block; */
+            text-align: center;
+            line-height: 72px;
+            cursor: pointer;
+            /*光标显示成小手型*/
+        }
+
+        .left ul li:hover {
+            background: #74b0e2;
+        }
+
+
+        .right {
+            float: left;
+            width: 10%;
+            height: 725px;
+            background:#2A7FE0;
+			background-image: linear-gradient(#458fce,#F1E5E5);
+            /* position: absolute;
+            top: 75px;
+            right: 0px;
+            height: 100%;
+            width: 15%;
+            background: blue; */
+        }
+
+        .middle {
+            float: left;
+            width: 80%;
+            height: 725px;
+			background:#D8D8D8;
+           
+        }
+        .cle{
+            clear: both;
+        }
+        /* .middle .shipin {
+            background-position: 50% 50%;
+            width: 600px;
+            height: 400px;
+        } */
+
+        /*	设置底部布局*/
+        .footer {
+            text-align: center;
+            /*		margin: 0px auto;*/
+            /* position: absolute; */
+            height: 70px;
+            width: 100%;
+            background:#458fce;
+/*			background-image: linear-gradient(180deg,#458fce,#F9F4F4);*/
+        }
+
+        .footer .me {
+/*            font-weight: bolder;*/
+			color: #E7DADA;
+/*            color: aqua;*/
+			
+            margin: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            font-size: 15px;
+            
+        }
+
+        .me a {
+			
+            color: #E7DADA;
+        }
+
+
+        /*设置header的div区*/
+        .header {
+            margin-bottom: 0;
+            height: 80px;
+            background:#5C82CB;
+/*			background-image: linear-gradient(0deg,#458fce,#E0D5D5);*/
+        }
+
+        .header .learn {
+            /*
+		color: #fff ;
+		font-size: 30px ;
+		clear: both;
+		text-align: center;	
+*/
+            color: #fff;
+            font-family: "aguafina-script";
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 80px;
+            margin-left: 20px;
+            /* display: inline-block; */
+            float: left;
+            /*左浮动*/
+        }
+
+        /*设置daohang的div区*/
+        .header .daohang {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 80px;
+            margin-left: 20px;
+            /* display: inline-block; */
+            float: left;
+            /*左浮动*/
+        }
+
+        /*设置li标签里*/
+        .header ul li {
+            float: left;
+            color: #fff;
+			font-size: 22px;
+            /* display: inline-block; */
+            width: 112px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            cursor: pointer;
+            /*光标显示成小手型*/
+        }
+
+        /*细节调整*/
+        ul li {
+            list-style: none;
+            /*li的小圆点去掉*/
+        }
+
+        .header ul li.first {
+            margin-left: 30px;
+            /*设置“首页”与“原创文字”间距*/
+            background: #5C82CB;
+            /*“首页”设置默认背景*/
+        }
+
+        /*设置a链接标签*/
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*设置导航添加hover事件*/
+        .header ul li:hover {
+            background: #74b0e2;
+        }
+
+        /*设置登录、注册按钮*/
+        .header .login {
+            float: right;
+            color: #fff;
+            line-height: 72px;
+            margin-right: 20px;
+        }
+		
+		/* 设置导航栏的搜索框样式 */
+.header input[type=text] {
+/*    float: right;*/
+    padding-left: 15px;
+    border: none;
+    margin-top: 30px;
+/*    margin-right: 16px;*/
+    font-size: 20px;
+	line-height: 10px;
+	
+	float: left;
+	
+	font-size: 22px;
+            /* display: inline-block; */
+            width: 112px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+}
+	           
+
+	
+	/* 当屏幕宽度小于 600px 时，垂直堆叠显示菜单选项和搜索框 */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+ 

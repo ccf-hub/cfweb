@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<script src="js/lu/recorder-core.js"></script>
+<script src="js/lu/engine/mp3.js"></script>
+<script src="js/lu/engine/mp3-engine.js"></script>
+<script src="js/lu/extensions/waveview.js"></script>
+<script src="js/in.js"></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>语音文本提问</title>
+<link href="css/lu.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+ 
+            <div class="ack">
+                <h3>请用语音或文本提问</h3>
+                <div class="massge" id="massge">
+
+                </div>
+                <div class="weben">
+                    <form name="input" style="padding-left: 30px;font-size: 15px;">
+                        <input type="text" name="qs" placeholder="请输入你的问题" id="qst">
+                        <input type="button" value="录音" onclick="luyin()">
+                        <input type="button" value="提交" onclick="sendAll()">
+						
+                        <p></p>
+
+                    </form>
+                </div>
+            </div>
+        
+</body>
+<script>
+    // 录音
+    var flage = true
+    var luyin = function () {
+        recOpen(
+            function () {
+                {
+                    rec.start();
+                    flage = false
+                }
+            }
+        )
+    }
+    var luyinst = function () {
+        recStop();
+    }
+    // 文字
+    let left = false;
+    var talk = document.getElementById('massge');
+    let send = function () {
+        let node = document.createElement('p');
+        let div = document.createElement('div');
+        div.className = 'wall';
+        let textNode = document.createTextNode(document.getElementById('qst').value);
+        node.appendChild(textNode);
+        node.className = 'ltalk';
+        div.appendChild(node);
+        talk.appendChild(div);
+        document.getElementById('qst').value = "";
+
+    }
+    let sendAll = function () {
+        send();
+        luyinst();
+
+    }
+
+</script>
+
+
+</html>

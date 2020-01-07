@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+#menu{
+	width: 100%;
+	margin: 0;
+/*	padding:8px 0;*/
+	font-family: "微软雅黑";
+	}
+#menu li {
+/*	float:left;*/
+/*	width: 100%;*/
+/*	color:aquamarine;*/
+	display:block;
+	text-align:center;
+	padding-left:0px;
+	background: #458fce;
+/*	未点击时课程专栏颜色*/
+	position: relative;
+	border-bottom:#ffeef4 0px solid;
+	height: 72px;
+	vertical-align:middle;
+	}
+#menu li :hover{
+	background: #fff;
+/*	点击后课程专栏的背景颜色*/
+}
+
+#menu li a{
+	color: #06CA1C;
+	font-size: 15px;
+	display:block;
+	outline:0;
+	text-decoration: none;
+	line-height:72px;
+/*	课程专栏字体高度*/
+}
+#left li:hover a{
+	color:#000000;
+/*	点击时课程专栏字体颜色*/
+}
+#menu li:hover a{
+	color:#000000;
+/*	点击时课程专栏字体颜色*/
+}
+#menu li:hover div a {
+	font-size: 12px; 
+	color: #3B4053;
+	line-height:16px;
+}
+#menu li:hover div a:hover{
+	color: #CC0000;
+/*	点击后字体颜色*/
+}
+#menu li:hover .cms_submenu {
+	left:152px;
+/*	侧边框距离左边距*/
+	top:0;
+}
+.cms_submenu{
+	float:left;
+	position: absolute;
+	left:-999em;
+	text-align:left;
+	border-left:4px solid #0099FF;
+	border-top:2px solid #0099FF;
+	border-bottom:2px solid #0099FF;
+	border-right:2px solid #0099FF;
+	width: 500px;
+	background: #fff;
+	padding:5px 0 5px;
+	z-index: 190;
+}
+.cmsmenuleft{
+	float: left;
+	width:500px;
+	color: #ccc; 
+	padding:5px;
+	z-index: 190;
+	}
+
+.cmsmenuright{
+	float: left;
+	width:500px;
+	color: #ccc; 
+	padding:5px;
+	z-index: 190;
+	}
+.cmsmenuleft dt, .cmsmenuright dt {
+	font-weight: bold;
+	color: #0099FF;
+/*	margin:5px 0;*/
+	padding:2px 0 3px 10px;
+	text-align:left;
+}
+.menu_recommend dd{
+	padding-left:8px;
+/*	方框内字体距离左边距*/
+	line-height: 0px;
+}
+
+.menu_new dd{
+	padding-left:8px;
+/*	方框内字体距离左边距*/
+	line-height: 15px;
+}
+.cmsmenuleft dd i {
+	float:left;
+	padding:0 8px;
+	margin: 3px 0;
+	white-space: nowrap;
+	border-right:1px solid #ccc;
+}
+
+	

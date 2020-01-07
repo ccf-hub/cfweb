@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>反馈表单</title>
+</head>
+	
+<body>
+<h1 align="center">问题反馈</h1>
+	
+<form method="post">
+	<p>姓&nbsp; &nbsp;名:
+		<input type="text" class="txt" size="12" maxlength="20" name="username" />
+	</p>
+	<p>性&nbsp; &nbsp;别:
+		<input type="radio" value="male" />男
+		<input type="radio" value="female" />女
+	</p>
+	<p>年&nbsp; &nbsp;龄:
+		<input type="text" class="txt" name="age" />
+	</p>
+	<p>联系电话:
+		<input type="text" class="txt" name="te1" />
+	</p>
+	<p>电子邮件:
+		<input type="text" class="txt" name="email" />
+	</p>
+  	<p>联系地址:
+		<input type="text" class="txt" name="address" />
+	</p>
+	<p>
+		请输入您对该网页的建议<br>
+		<textarea name="yourwork" cols="50" rows="5"></textarea><br>
+	</p>
+	<p><button onclick="myFunction()">提交</button>
+<!--		<input type="submit" name="submit" value="提交" class="but" />-->
+		<input type="reset" name="reset" value="清除" class="but" />
+<!--		<input type="button" name="fanhui" onclick="javascript:history.back(-1);" value = "返回首页">-->
+			<a href="index.html" target="_top">返回首页</a>
+<div>	
+	<p id="demo" style="text-align: center;"></p>
+	<script>
+		function myFunction(){
+		var x;
+		var r=confirm("你确定要提交反馈吗？");
+		if (r==true){
+			x="你的反馈我们已收到，我们会尽快解决！";
+		}
+		else{
+			x="已取消";
+		}
+		document.getElementById("demo").innerHTML=x;
+		} 
+	</script>
+	</div>
+	</p>
+	
+</form>
+	
+</body>
+</html>
+

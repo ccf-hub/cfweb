@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>视频</title>
+</head>
+
+	
+<style>
+	.panel{
+		background-image: linear-gradient(#458fce,#F1E5E5);
+		width: 100%;
+		height: 750px;
+	}
+	
+</style>
+	
+<body> 
+<div class="panel">
+<div style="text-align:center "> 
+  <br>
+	<h1>我的微课视频</h1>
+  <video id="video" width="600">
+    <source src="video/2.mp4" type="video/mp4">
+    <source src="video/2.ogg" type="video/ogg">
+	  <source src="video/2.webm" type="video/webm" />
+    您的浏览器不支持 HTML5 video 标签。
+  </video><br><br>
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">放大</button>
+  <button onclick="makeSmall()">缩小</button>
+  <button onclick="makeNormal()">普通</button><br><br>
+  <a href="index.html" target="_top">返回首页</a><br>
+	<br><p>温馨提示：每个微课视频会有三到五个小问题，只有正确回答才能继续学习！</p>
+<!--<input type="button" name="fanhui" onclick="javascript:history.back(-1);" value = "返回首页">-->
+<!--	<button onClick="">返回首页</button>-->
+</div>
+</div>
+	
+	<script>
+    //监听播放时间
+    var video = document.getElementById('video');
+    //当前播放的视频
+    var currVideo=1;
+    //使用事件监听方式捕捉事件
+    video.addEventListener("timeupdate", function () {
+        //获取当前播放进度
+        time = Math.floor(video.currentTime);
+          if (time == 30) {//触发暂停事件
+            video.pause();
+            video.currentTime+=1;  
+            var reason=prompt("女主人是在做早餐吗？", "");
+            while(reason!="是") {//判断是否填写正确答案
+                alert("答案错误,请重新作答!!");
+                reason=prompt("女主人是在做早餐吗？", "");
+            }
+            video.play();
+        }   
+		
+		 if (time == 90) {//触发暂停事件
+            video.pause();
+            video.currentTime+=1;  
+            var reason=prompt("主人公是种什么食物？", "");
+            while(reason!="包子") {//判断是否填写正确答案
+                alert("答案错误,请重新作答!!");
+                reason=prompt("主人公是种什么食物？", "");
+            }
+            video.play();
+        }    
+		
+		if (time == 130) {//触发暂停事件
+            video.pause();
+            video.currentTime+=1;  
+            var reason=prompt("母亲是否觉得孤独？", "");
+            while(reason!="是") {//判断是否填写正确答案
+                alert("答案错误,请重新作答!!");
+                reason=prompt("母亲是否觉得孤独？", "");
+            }
+            video.play();
+        }    
+		
+    }, false);
+
+</script>
+	
+<script> 
+var myVideo=document.getElementById("video"); 
+
+function playPause()
+{ 
+	if (myVideo.paused) 
+	  myVideo.play(); 
+	else 
+	  myVideo.pause(); 
+} 
+
+	function makeBig()
+{ 
+	myVideo.width=1000; 
+} 
+
+	function makeSmall()
+{ 
+	myVideo.width=700; 
+} 
+
+	function makeNormal()
+{ 
+	myVideo.width=850; 
+} 
+</script>
+
+</body>
+</html>

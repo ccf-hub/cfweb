@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<script src="js/lu/recorder-core.js"></script>
+<script src="js/lu/engine/mp3.js"></script>
+<script src="js/lu/engine/mp3-engine.js"></script>
+<script src="js/lu/extensions/waveview.js"></script>
+<script src="js/in.js"></script>
+<head>   
+<meta charset="utf-8">
+	 <script src="fileSaver.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="./css/animate.css">
+   <link rel="stylesheet" type="text/css" href="./css/common.css">
+   <link href="css/lu.css" rel="stylesheet" type="text/css">
+   <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+	
+
+<body>
+<!--header布局-->
+	
+<div class="header">
+<!--	拉开导航栏-->
+    <div class="navbar">
+<!--        <div class="dh_jz">-->
+			
+        <div class="nav1">
+          <ul>
+              <li><a href="index.html" class="nbf">首页</a></li>
+              <li><a href="center.html" class="nbf">个人中心</a></li>
+              <li><a href="video.html" class="nbf">微课视频</a></li>
+              <li><a href="luxiang.html" class="nbf">录像提问</a></li>
+          </ul>
+        </div>
+			
+<!--        <div class="nav_img" style="background: url(images/sy.jpg);width:180px ;height:150px ;background-repeat: no-repeat;"></div>-->
+		 <div class="nav_img"></div>
+			
+        <div class="nav2">      
+          <ul>
+              
+              <li><a href="fankui.html" class="nbf">问题反馈</a></li>
+<!--              <li><a href="" class="nbf">提交</a></li>-->
+              <li><a href="about.html" class="nbf">关于我们</a></li>
+			  <li><a href="zc.html" class="nbf">  注册</a></li>
+			  <li><a href="denglu.html" class="nbf">| 登录</a></li>
+			  
+		
+			  
+          </ul>
+        </div> 
+		
+		
+<!--       </div>-->
+      </div>
+      <div class="h_line">
+        <ul>
+          <li id="line_1"></li>
+          <li id="line_2"></li>
+          <li id="line_3"></li>
+        </ul>
+      </div>
+      <div class="h_bt" id="h_bt" onclick="javascript:window.location.href='#.html'">
+          <a href="#">学习录播器</a>
+          <img src="images/jiantou.png">
+      </div>
+
+      <div class="section1 active" id="st1">
+          <span id="st1_sp1">读书是为了</span>
+          <span id="st1_sp2">让你的人生更精彩</span>
+          <p id="st1_sp3">我爱学习，学习使我快乐</p>
+
+          <video id="st1_video" playsinline="true" webkit-playsinline="true"  poster="images/4.jpg" style="width:100vw;height:auto ;display: inline;" autoplay="autoplay"></video>
+
+      </div>
+
+      <div class="section2" id="st2">
+        <span id="st2_sp1">努力</span>
+        <span id="st2_sp2">是奇迹的另一个名字</span>
+
+        <p id="st2_sp3"  style="left:40vw;">还在犹豫什么？加入我们吧！</p>
+          <img src="images/1.jpg" alt="" >
+      </div>
+
+      <div class="section3" id="st3">
+        <span id="st3_sp1">学历只能代表过去</span>
+        <span id="st3_sp2">学习才能创造未来</span>
+        <p id="st3_sp3" style="left:33.5vw;">走过路过，不要错过</p>
+       <img src="images/2.jpg" alt="" >
+      </div>
+
+</div>
+
+<div class="fh0"></div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/scrollReveal.js"></script>
+<script src="./js/jquery.stellar.min.js"></script>
+<script src="./js/common8.js"></script>
+<!--<script src="./js/wow.min.js"></script>-->
+
+	 
+
+	<div id="aa">
+		<p style="font-family: actor;font-size: 30px;padding-left: 20px;text-align: center;">
+		<img src ="images/xx.gif" align ="left" width="400vw" height="390vw"> 
+		<br><br>我们开发的这个交互式学习录播器是不以盈利为目的，<br><br>
+		尽管未来维持 交互式学习录播器 正常运营的费用非常高昂<br><br>
+		但为了让广大受众可以更好的多一个选择的学习平台<br><br>
+		我们一直在努力去完善它
+		</p></div>
+	<div id="bb">
+		<p style="font-family: actor;font-size: 30px;padding-left: 20px;text-align: left;color: #FCFCFC;">
+		<img src ="images/2.jpg" align ="right" width="400vw" height="399vw"> 
+		<br>此交互式学习录播器主要有以下几个功能：<br>
+			（1）普通的注册/登录功能，让你可以随时随地地了解自己的学习状况；<br>
+			（2）在学习微课视频的过程中会不定期弹出问题，<br>
+			 只有正确回答问题才可以继续学习下去；<br>
+			（3）语音、文本、录像提问功能；<br>
+			（4）搜索课程功能；<br>
+			（5）个人中心中有测试单元，以便课后巩固。<br>
+	</p></div>
+		
+	<div id="cc">
+	<video id="videoPlayer" controls="control" width="580" height="440" style="margin: 0 auto;float: left;padding-top: 15px;text-align: center;">
+  		<source src="video/1.mp4" type="video/mp4" />
+ 		<object data="movie.mp4" width="580" height="440">
+    	<embed src="movie.swf" width="580" height="440" />
+  		</object>
+	</video>
+		<p style="font-family: actor;font-size: 40px;padding-left: 20px;text-align:center;">
+			<br>这是一个普通的微课视频，<br><br>
+			学习过程会不定期弹出问题，<br><br>
+			只有正确回答问题才可以继续学习下去；<br><br>
+			可以让学习者更专注!<br>
+		</p>
+		
+	</div>
+		 
+	<div id="dd">
+		
+	<div class="ack">
+                <h3>请用语音或文本提问</h3>
+                <div class="massge" id="massge">
+
+                </div>
+                <div class="weben">
+                    <form name="input" style="padding-left: 12px;height: 20px;">
+                        <input type="text" name="qs" placeholder="请输入你的问题" id="qst">
+                        <input type="button" value="录音" onclick="luyin()">
+                        <input type="button" value="提交" onclick="sendAll()">
+						
+                        <p></p>
+
+                    </form>
+                </div>
+            </div>
+		<p style="font-family: actor;font-size: 30px;padding-left: 30px;text-align:left;color:#BE1E20;">
+	<br>你可以随时随地使用语音或者文字<br><br>
+		向老师或者同好提问<br><br>
+		也可以随时查看自己提交的语音或文字<br><br>
+		有了这款交互式学习录播器<br><br>
+		爱上学习不是梦
+	</p>
+
+	</div>
+
+	  <div id="ee" style="height:100px; text-align: center;font-size: 20px;padding-top: 20px;"> 
+		   <a href="">法律条款 </a>|
+            <a href="">隐私保护 </a>|
+            <a href="">联系我们 </a>|
+            <a href="">常见问题</a>|
+            <p >@Copyright 2019 YuLinNomalUniversity</p>
+<!--		  <p  style="height:70px; text-align: center;font-size: 20px;padding-top: 20px;">@Copyright 2019 YuLinNomalUniversity</p>-->
+	</div>
+	
+
+	<script>
+    //监听播放时间
+    var video = document.getElementById('videoPlayer');
+    //当前播放的视频
+    var currVideo=1;
+    //使用事件监听方式捕捉事件
+    video.addEventListener("timeupdate", function () {
+        //获取当前播放进度
+        time = Math.floor(video.currentTime);
+          if (time == 5) {//触发暂停事件
+            video.pause();
+            video.currentTime+=1;  
+            var reason=prompt("主人公是只小刺猬吗？", "");
+            while(reason!="是") {//判断是否填写正确答案
+                alert("答案错误,请重新作答!!");
+                reason=prompt("主人公是只小刺猬吗？", "");
+            }
+            video.play();
+
+        }      
+    }, false);
+		
+</script>
+	
+	    	
+</body>
+<!--介绍页面	-->
+<style>
+    body{
+		background: #C8C8C8;
+
+    }
+</style>
+	<script>
+    
+    var flage = true
+    var luyin = function () {
+        recOpen(
+            function () {
+                {
+                    rec.start();
+                    flage = false
+                }
+            }
+        )
+    }
+    var luyinst = function () {
+        recStop();
+    }
+    
+    let left = false;
+    var talk = document.getElementById('massge');
+    let send = function () {
+        let node = document.createElement('p');
+        let div = document.createElement('div');
+        div.className = 'wall';
+        let textNode = document.createTextNode(document.getElementById('qst').value);
+        node.appendChild(textNode);
+        node.className = 'ltalk';
+        div.appendChild(node);
+        talk.appendChild(div);
+        document.getElementById('qst').value = "";
+
+    }
+    let sendAll = function () {
+        send();
+        luyinst();
+
+    }
+
+</script>
+</html>

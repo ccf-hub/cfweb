@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>单元测试</title>
+</head>
+	
+	<style>
+		.data{
+		top: 30px;
+		width: 100%;
+		height: 900px;
+		background:#F3E7E7;
+		}
+	</style>
+
+<body>
+	<div class="data" style="padding-left: 40px; padding-top: 20px;">
+	<form  method="post">
+		<h2>单元测试</h2>
+		<p>一、选择题</p>
+		<p>1.按照用途分类，传感器可以分为以下哪几种？<br><br>
+			<input type="checkbox" name="wenti" value="A">A.视觉
+			<input type="checkbox" name="wenti" value="B">B.嗅觉
+			<input type="checkbox" name="wenti" value="C">C.听觉
+			<input type="checkbox" name="wenti" value="D">D. 以上都是</p><br>
+		
+		<p>2.以下选项是传感器网络特点的有：<br><br>
+			<input type="checkbox" name="wenti" value="A">A.资源受限
+			<input type="checkbox" name="wenti" value="B">B.自组织结构
+			<input type="checkbox" name="wenti" value="C">C.动态性强
+			<input type="checkbox" name="wenti" value="D">D. 以资料为中心</p><br>
+		
+		<p>3.智慧传感器的智慧材料Smart结构、Smart材料具有三个模块,分别是：<br><br>
+			<input type="checkbox" name="wenti" value="A">A.传感器
+			<input type="checkbox" name="wenti" value="B">B.执行器
+			<input type="checkbox" name="wenti" value="C">C.控制器
+			<input type="checkbox" name="wenti" value="D">D. 控制器</p><br>
+<!--
+		<p>按照用途分类，传感器可以分为以下哪几种？<select name="wenti">
+			<option value="A">A.视觉</option>
+			<option value="A">B.嗅觉</option>
+			<option value="A">C.听觉</option>
+			<option value="A">D. 以上都是</option>
+			</select>
+		</p>
+-->
+		
+		<p>二、简答题</p>
+		<p>1.传感器的定义是什么？</p>	
+		<tr><td><textarea name="ques" rows="3" cols="60"></textarea></td></tr><br>
+		<p>2.传感器网络特点为何？</p>	
+		<tr><td><textarea name="ques" rows="3" cols="60"></textarea></td></tr><br>
+		<p>3.传感器网络系统的各层协议的功能为何? 请详细说明!</p>	
+		<tr><td><textarea name="ques" rows="3" cols="60"></textarea></td></tr><br>
+		
+		
+		<br><button onclick="myFunction()">提交</button>
+<!--		<input type="button" name="fanhui" onclick="javascript:history.back(-1);" value = "返回个人中心"/>-->
+		  <a href="index.html" target="_top">返回首页</a>
+<!--		<a href="index.html">返回首页</a>-->
+<!--	     <button onclick="Back()">返回</button>-->
+	</form>
+		
+		<p id="demo" style="text-align: center;"></p>
+<script>
+function myFunction(){
+	var x;
+	var r=confirm("你确定要提交问题吗？");
+	if (r==true){
+		x="提交成功!";
+	}
+	else{
+		x="已取消";
+	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+</div>
+</body>
+</html>

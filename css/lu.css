@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ack {
+	float: right;
+    width: 400px;
+    margin: 0 0 0 5px;
+    background-image: linear-gradient(#458fce,#F1E5E5);
+    border: 2px solid white;
+	padding-bottom: 15px;
+    }
+
+.ack h3 {
+	width: 400px;
+	height: 5vw;
+    text-align: center;
+    color: white;
+        }
+
+.massge {
+	padding-right: 8vw;
+    height: 300px;
+    color: white;
+    overflow-y: auto;
+       }
+/*录音条*/
+.massge audio {
+    height: 35px;
+    width: 350px;
+	background:#EDEDED;
+	padding-top: 0px;
+}

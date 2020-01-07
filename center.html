@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>个人中心</title>
+
+    <style>
+        /*设置整体*/
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+        .content{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .left {
+            float: left;
+			width: 10%;
+            height: 725px;
+            background-color:#458fce;
+/*			background-image: linear-gradient(#458fce,#F1E5E5);*/
+        }
+
+        .left ul li {    
+/*            color: #fff;*/
+            text-align: center;
+            line-height: 72px;
+            cursor: pointer;
+            /*光标显示成小手型*/
+        }
+		 .left ul li a{    
+/*            color: #fff;*/
+           color:#06CA1C;
+        }
+
+        .left ul li:hover {
+/*            background: #74b0e2;*/
+			background: #fff;
+			
+/*			点击后背景颜色*/
+        }
+		
+/*
+		.left ul li:hover a:hover{
+			color:#000000;
+			点击后字体颜色
+		}
+*/
+
+
+
+        .right {
+            float: left;
+            width: 10%;
+            height: 725px;
+            background:#458fce;
+/*			background-image: linear-gradient(#458fce,#F1E5E5);*/
+        }
+
+        .middle {
+            float: left;
+            width: 80%;
+            height: 725px;
+			background:#D8D8D8;
+           
+        }
+        .cle{
+            clear: both;
+        }
+     
+        /*	设置底部布局*/
+        .footer {
+            text-align: center;
+            /*		margin: 0px auto;*/
+            /* position: absolute; */
+            height: 70px;
+            width: 100%;
+            background:#458fce;
+
+        }
+
+        .footer .me {
+			color: #E7DADA;
+			padding-top: 18px; 
+            margin: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .me a {
+            color: #E7DADA;
+        }
+
+
+        /*设置header的div区*/
+        .header {
+            margin-bottom: 0;
+            height: 80px;
+            background:#5C82CB;
+/*			background-image: linear-gradient(0deg,#458fce,#E0D5D5);*/
+        }
+
+        .header .learn {
+            color: #fff;
+            font-family: "aguafina-script";
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 80px;
+            margin-left: 20px; 
+            float: left;
+            /*左浮动*/
+        }
+
+        /*设置daohang的div区*/
+        .header .daohang {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 80px;
+            margin-left: 20px;
+            /* display: inline-block; */
+            float: left;
+            /*左浮动*/
+        }
+
+        /*设置li标签里*/
+        .header ul li {
+            float: left;
+            color: #fff;
+			font-size: 22px;
+            /* display: inline-block; */
+            width: 112px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            cursor: pointer;
+            /*光标显示成小手型*/
+        }
+
+        /*细节调整*/
+        ul li {
+            list-style: none;
+            /*li的小圆点去掉*/
+        }
+
+        .header ul li.first {
+            margin-left: 30px;
+            background: #5C82CB; 
+        }
+
+        /*设置a链接标签*/
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*设置导航添加hover事件*/
+        .header ul li:hover {
+            background: #74b0e2;
+        }
+
+        /*设置登录、注册按钮*/
+        .header .login {
+            float: right;
+            color: #fff;
+            line-height: 72px;
+            margin-right: 20px;
+        }
+		
+		/* 设置导航栏的搜索框样式 */
+.header input[type=text] {
+/*    float: right;*/
+    padding-left: 15px;
+    border: none;
+    margin-top: 30px;
+/*    margin-right: 16px;*/
+    font-size: 20px;
+	line-height: 10px;
+	
+	float: left;{
+           
+			font-size: 22px;
+            /* display: inline-block; */
+            width: 112px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            
+}
+	
+	/* 当屏幕宽度小于 600px 时，垂直堆叠显示菜单选项和搜索框 */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+    </style>
+    <link href="css/leftnav.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body>
+    <div class="header">
+        <div class="daohang" >
+			<img src="images/hu.jpg" style="float:left;" width="90" height="80" >
+		</div>
+<!--		<p>玉林师范学院</p>-->
+        <ul>
+            <li class="first"></li>
+  			<input style="padding-left: 20px;" type="text" placeholder="搜索..">
+        </ul>
+        <div class="login">
+            <span><a href="denglu.html">登陆</a></span>
+            <span>|</span>
+            <span><a href="zc.html">注册</a></span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="school"></div>
+            <ul>
+              
+                <!--	    	<li><a href="">播放/暂停</a></li>-->
+                <li><a href="tiku.html">我的测试</a></li>
+               
+<!--                <li><a href="tanchuang.html">课程专栏</a></li>-->
+		
+				<section id="leftnav_focusimg">
+					<aside id="left_nav">
+					<div id="sidebar">
+						<ul id="menu">
+				<li><a href="">课程专栏</a>
+					<div class="cms_submenu">
+			<ul id="mmp">
+						<div class="cmsmenuleft">
+							<dl class="menu_recmend">
+								<dt>热门课程</dt>
+								<dd>
+									<i><a target="_blank" href="">国家精品</a></i>
+									<i><a target="_blank" href="">计算机</a></i>
+									<i><a target="_blank" href="">外语</a></i>
+									<i><a target="_blank" href="">理学</a></i>
+									<i><a target="_blank" href="">工学</a></i>
+									<i><a target="_blank" href="">经济管理</a></i>
+									<i><a target="_blank" href="">心理学</a></i>
+									<i><a target="_blank" href="">文史哲</a></i>
+									<i><a target="_blank" href="">艺术设计</a></i>
+									<i><a target="_blank" href="">医药卫生</a></i>
+									<i><a target="_blank" href="">教育教学</a></i>
+									<i><a target="_blank" href="">法学</a></i>
+									<i><a target="_blank" href="">农林园艺</a></i>
+									<i><a target="_blank" href="">考研</a></i>
+									<i><a target="_blank" href="">名师专栏</a></i>
+									
+								</dd>
+								<div class="clear"></div>
+							</dl>
+						</div>
+						</ul>
+						<div class="cmsmenuright">
+							<dl class="menu_new">
+								<dt>活动推荐</dt>
+								<dd>
+									<a href="">[精品课程]旅顺、金石滩、环市、发现王国纯玩四日游</a><br/>
+									<a href=""> [优惠活动]2020年春节前网络直播课打六折</a><br/>
+									<a href=""> [特价活动]2021年考研最新资料 </a><br/>
+									<a href="">[考研精选]数学、政治、计算机、英语</a><br/>
+									
+								</dd>
+							</dl>
+						</div>
+
+					</div>						
+					</li>
+				</ul>
+			</div>	
+		</aside>
+		</section>
+
+                <li><a href="luxiang.html">完成课程</a></li>
+				 <li><a href="video.html">学习时长</a></li>
+                <li><a href="yinpin.html">今日任务</a></li>
+				<li><a href="index.html">返回首页</a></li>
+				
+            </ul>
+        </div>
+		
+        <div class="middle">
+			<div style="padding-left: 50px; padding-top: 20px; " >
+				<br>
+				<h2>已选课程</h2>
+				<img src="images/A.png" style="float:left;padding-left: 50px;padding-top: 35px;" width="200" height="250" >
+				<img src="images/B.png" style="float:left;padding-left: 50px;padding-top: 35px;" width="200" height="250" >
+				<img src="images/C.png" style="float:left;padding-left: 50px;padding-top: 35px;" width="200" height="250" >
+				<img src="images/D.png" style="float:left;padding-left: 50px;padding-top: 35px;" width="200" height="250" >
+				<img src="images/E.png" style="float:left;padding-left: 50px;padding-top: 35px;" width="200" height="250" >
+				<img src="images/A.png" style="float:left;padding-left: 50px;padding-top: 35px;" width="200" height="250" >
+				<img src="images/D.png" style="float:left;padding-left: 50px;padding-top: 35px;" width="200" height="250" >
+				<img src="images/C.png" style="float:left;padding-left: 50px;padding-top: 35px;" width="200" height="250" >
+				
+				
+			</div>
+  	
+        </div>
+		
+		
+        <div class="right">
+            <div class="learn"></div>
+        </div>
+    </div>
+    <div class="cle"></div>
+    <div class="footer">
+        <div class="me">
+            <a href="">法律条款 </a>|
+            <a href="">隐私保护 </a>|
+            <a href="">联系我们 </a>|
+            <a href="">常见问题</a>|
+            <p>@Copyright 2019 YuLinNomalUniversity</p>
+        </div>
+    </div>
+    <!--
+	<div class="left" >
+		style="background-image: url(images/2.jpg);height:500px;width:100px;float:right;"></div>
+-->
+	
+	
+</body>
+	
+	
+	
+</html>
